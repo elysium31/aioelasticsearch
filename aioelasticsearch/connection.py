@@ -67,7 +67,6 @@ class AIOHttpConnection(Connection):
                 connector=aiohttp.TCPConnector(
                     limit=maxsize,
                     use_dns_cache=kwargs.get('use_dns_cache', False),
-                    loop=self.loop,
                     **kwargs,
                 ),
             )
